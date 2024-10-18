@@ -1,5 +1,9 @@
+let isLoading = false;
+
 const handleSubmit = async (e) => {
   e.preventDefault();
+
+  isLoading = true;
 
   const secDiv = document.getElementById("register-sec");
 
@@ -24,9 +28,14 @@ const handleSubmit = async (e) => {
 
     alert("Registration Complete!✅");
   } catch (error) {
+    isLoading = false;
     alert(error.message);
     console.log(error);
+  } finally {
+    isLoading = false;
   }
 };
+
+console.log(isLoading);
 
 document.getElementById("form-datas").addEventListener("submit", handleSubmit);

@@ -130,39 +130,53 @@ setInterval(() => {
   showSlide(currentSlide + 1); // Show the next slide every 5 seconds
 }, 5000); // Change duration as needed
 
+//
+
+//
+
 // form data from html inputs (Major starts from here)
 
 /* 
-    form-group-container
-      name
-      email
-      phone
-      message
-      newsletter-email
-      email-newsletter
+form-group-container
+name
+email
+phone
+message
+newsletter-email
+email-newsletter
 */
+
+// function to POST data to Email for forms (incase you won change anything)
+
+// Loading variable bro
+let isLoading = false;
 
 // Get In Touch
 const handleSubmit = async (e) => {
   e.preventDefault();
 
-  let username = document.getElementById("name").value;
+  isLoading = true;
+  let username = document.getElementById("name-input").value;
   let email = document.getElementById("email").value;
   let phone = document.getElementById("phone").value;
   let message = document.getElementById("message").value;
 
   console.log(username, email, phone, message);
+  console.log(isLoading);
 
   try {
     const response = await axios.post(
       "http://localhost:4444/info-tnas/contact",
-      { username, email, phone, message }
+      { name: username, email, phone, message }
     );
 
     alert("You won’t miss an update✅");
   } catch (error) {
+    isLoading = false;
     console.log(error);
     alert(error.message);
+  } finally {
+    isLoading = false;
   }
 };
 
@@ -170,19 +184,40 @@ const form_datas = document
   .getElementById("form-datas")
   .addEventListener("submit", handleSubmit);
 
+//
+
 // newsletter
 
-const handleEmailSubmit = (e) => {
+//
+
+const handleEmailSubmit = async (e) => {
   e.preventDefault();
+  isLoading = true;
   let emailFromNews = document.getElementById("newsletter-email").value;
 
   console.log(emailFromNews);
+  console.log(isLoading);
+  try {
+    const response = await axios.post(
+      "http://localhost:4444/info-tnas/newsletter",
+      { email: emailFromNews }
+    );
+
+    alert("You won’t miss an update✅");
+  } catch (error) {
+    isLoading = false;
+    console.log(error);
+    alert(error.message);
+  } finally {
+    isLoading = false;
+    console.log(isLoading);
+  }
 };
+
+if (isLoading === true) {
+  alert(isLoading);
+}
 
 const email_newsletter = document
   .getElementById("email-newsletter")
   .addEventListener("submit", handleEmailSubmit);
-
-// function to POST data to Email for Contact (incase you won change anything)
-
-function sendContactEmail() {}
