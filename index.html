@@ -52,7 +52,7 @@
           class="lo"
           style="display: flex; flex-direction: column; align-items: center"
         >
-          <img src="logo.JPG" alt="Giolla Logo" class="logo-loader" />
+          <img src="logo.JPG" alt="Logo" class="logo-loader" />
           <h2 class="loading-text">Giolla Agency</h2>
         </div>
         <div class="spinner"></div>
@@ -72,14 +72,14 @@
         <div class="container">
           <a href="index.html" class="logo"
             ><sup>the</sup> <b>Network Africa Summit</b><small>2025</small>
-            <img src="prev-removebg-preview.png" alt="Giolla logo" />
+            <img src="prev-removebg-preview.png" alt="logo" />
           </a>
 
           <nav class="navbar" data-navbar>
             <div class="wrapper">
               <a href="index.html" class="logo"
                 ><sup> </sup> <b>TNAS</b><small>2025</small>
-                <img src="prev-removebg-preview.png" alt="Giolla logo" />
+                <img src="prev-removebg-preview.png" alt="logo" />
               </a>
 
               <button
@@ -136,28 +136,87 @@
 
       <main>
         <article>
-          <section class="hero-section">
-            <div class="hero-content">
-              <h1>Welcome to The Network Africa Summit</h1>
-              <p>
-                Join us in exploring innovative solutions for national
-                development through youth entrepreneurship.
-              </p>
-              <a href="#" class="cta-button">Get Involved</a>
-            </div>
+          <!-- 
+        - #HERO
+      -->
 
-            <div class="hero-slider">
-              <div class="slide active">
-                <img src="about.png" alt="Slide 1" />
-              </div>
-              <div class="slide">
-                <img src="ibukun.JPG" alt="Slide 2" />
-              </div>
-              <div class="slide">
-                <img src="abua.jpg" alt="Slide 3" />
-              </div>
-            </div>
-          </section>
+      <section class="section hero has-bg-image" aria-label="home"
+      style="background-image: url('./assets/images/hero-bg.jpg')">
+      <div class="container">
+
+        <div class="hero-content">
+
+          <h1 class="h1 hero-title">Crafting project specific solutions with expertise.</h1>
+
+          <p class="hero-text">
+            We’re a creative company that focuses on establishing long-term relationships with customers.
+          </p>
+
+          <div class="btn-wrapper">
+
+            <a href="#" class="btn btn-primary">Explore Now</a>
+
+            <a href="#" class="btn btn-outline">Contact Us</a>
+
+          </div>
+
+        </div>
+
+        <div class="hero-slider" data-slider>
+
+          <div class="slider-inner">
+            <ul class="slider-container" data-slider-container>
+
+              <li class="slider-item">
+
+                <figure class="img-holder" style="--width: 575; --height: 550;">
+                  <img src="./assets/images/hero-slide-1.jpg" width="575" height="550" alt="" class="img-cover">
+                </figure>
+
+              </li>
+
+              <li class="slider-item">
+
+                <div class="hero-card">
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/hero-slide-2.jpg" width="575" height="550" alt="hero banner"
+                      class="img-cover">
+                  </figure>
+
+                  <button class="play-btn" aria-label="play adex intro">
+                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+              </li>
+
+              <li class="slider-item">
+
+                <figure class="img-holder" style="--width: 575; --height: 550;">
+                  <img src="./assets/images/hero-slide-3.jpg" width="575" height="550" alt="" class="img-cover">
+                </figure>
+
+              </li>
+
+            </ul>
+          </div>
+
+          <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+            <ion-icon name="arrow-back"></ion-icon>
+          </button>
+
+          <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
 
           <!-- 
         - #ABOUT
@@ -386,7 +445,17 @@
                   </h3>
                 </div>
               </div>
-
+              <div class="card">
+                <div class="img">
+                  <img src="kenny.JPG" alt="Laerry" />
+                </div>
+                <div class="texts">
+                  <h1>Dr. Smart Kenny Ibitoye</h1>
+                  <h3 style="font-weight: 600">
+                    CEO SKI Consulting and investment services Limited
+                  </h3>
+                </div>
+              </div>
               <div class="card">
                 <div class="img">
                   <img src="titilayo.JPG" alt="Titilayo Obileye" />
@@ -427,6 +496,49 @@
             </div>
           </section>
 
+
+          <section class="section cta" aria-label="call to action">
+            <div class="container">
+              <div class="cta-content">
+                <h2 class="h2 cta-title">
+                  Ready to Take Your Business to the Next Level?
+                </h2>
+                <p class="cta-text">
+                  Register with our expert services today and watch your
+                  business thrive!
+                </p>
+                <a href="register.html" class="btn btn-primary">Register</a>
+              </div>
+            </div>
+          </section>
+         
+
+
+          <div class="spon" style="align-items: center; display: flex; flex-direction: column; margin-top: 50px; margin-bottom: 20px;">
+            <h2 class="section-title">Sponsored by</h2>
+            <section class="sponsored-by">
+              
+              <div class="sponsor-logo">
+                <img src="img1.JPG" alt="Sponsor 1" class="pmg">
+              </div>
+              <div class="sponsor-logo">
+                <img src="img2.JPG" alt="Sponsor 2" class="img">
+              </div>
+              <div class="sponsor-logo">
+                <img src="img3.JPG" alt="Sponsor 3" class="pmg">
+              </div>
+              <div class="sponsor-logo">
+                <img src="img4.JPG" alt="Sponsor 4" class="img">
+              </div>
+              <div class="sponsor-logo">
+                <img src="img5.JPG" alt="Sponsor 5" class="pmg">
+              </div>
+              <div class="sponsor-logo">
+                <img src="img6.JPG" alt="Sponsor 6" class="img">
+              </div>
+            </section>
+          </div>
+          
           <!-- 
         - #FAQ
       -->
@@ -675,33 +787,6 @@
             </div>
           </section>
 
-          <!-- <div class="testimonial-container">
-  <div class="title-wrapper" style="margin-bottom: 40px;">
-    <h2 class="h2 section-title">Discover Frequently Asked Questions?</h2>
-  </div>
-  <div class="testimonial-slider">
-    <div class="testimonial-item">
-      <img src="./assets/images/giolla-fav.png" alt="Testimonial 1">
-      <h3>James Chukwuemeka</h3>
-      <p>"This platform is amazing! The courses are very helpful and the instructors are great."</p>
-    </div>
-    <div class="testimonial-item">
-      <img src="./assets/images/giolla-fav.png" alt="Testimonial 2">
-      <h3>Bola Adebayo</h3>
-      <p>"I've learned so much and now I feel more confident in my coding skills."</p>
-    </div>
-    <div class="testimonial-item">
-      <img src="./assets/images/giolla-fav.png" alt="Testimonial 3">
-      <h3>Dickson Joshua</h3>
-      <p>"The content is up-to-date and relevant. Highly recommend to anyone looking to learn!"</p>
-    </div>
-    <div class="testimonial-item">
-      <img src="./assets/images/giolla-fav.png" alt="Testimonial 4">
-      <h3>Ugo Esther</h3>
-      <p>"Such a fantastic experience! The interactive quizzes were super engaging."</p>
-    </div>
-  </div>
-</div> -->
 
           <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
@@ -816,11 +901,9 @@
         <div class="footer-top section">
           <div class="container">
             <div class="footer-brand">
-              <a href="index.html" class="logo"
-                ><img src="assets/images/giolla-fav.png" alt="" /><b
-                  >GIOLLA_AGENCY</b
-                ></a
-              >
+              <a href="index.html" class="logo"><b>the NA Summit</b>
+                <img src="prev-removebg-preview.png" alt="logo" />
+              </a>
 
               <p class="footer-text">
                 Welcome to Giolla Agency, where we craft digital solutions. From

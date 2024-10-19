@@ -166,7 +166,7 @@ const handleSubmit = async (e) => {
 
   try {
     const response = await axios.post(
-      "http://localhost:4444/info-tnas/contact",
+      "https://email-mailer.onrender.com/info-tnas/contact",
       { name: username, email, phone, message }
     );
 
@@ -199,7 +199,7 @@ const handleEmailSubmit = async (e) => {
   console.log(isLoading);
   try {
     const response = await axios.post(
-      "http://localhost:4444/info-tnas/newsletter",
+      "https://email-mailer.onrender.com/info-tnas/newsletter",
       { email: emailFromNews }
     );
 

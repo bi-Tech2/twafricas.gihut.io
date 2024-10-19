@@ -22,7 +22,7 @@ const handleSubmit = async (e) => {
 
   try {
     const response = await axios.post(
-      "http://localhost:4444/info-tnas/register",
+      "https://email-mailer.onrender.com/info-tnas/register",
       { formData }
     );
 
