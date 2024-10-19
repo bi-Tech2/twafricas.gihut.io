@@ -1219,13 +1219,14 @@
   
   
   .contact-section {
-    background-color: var(--rich-black-fogra-29-2);
+    background-color: hsl(134, 31%, 14%);
     padding: 50px 10px; /* Spacing around the section */
     transition: background-color 0.3s; /* Smooth background color transition */
   }
   
   
   .contact-intro {
+    background: #000;
     text-align: center; /* Center the introductory text */
     margin-bottom: 30px; /* Spacing below the intro */
     opacity: 0; /* Start hidden */
@@ -1250,13 +1251,15 @@
   .contact-form {
     max-width: 900px; /* Limit form width */
     margin: 0 auto; /* Center align */
-    background: var(--go-green_5);
+    background: #e0fff1;
     padding: 30px; /* Increased padding inside the form */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow for form */
     animation: slideIn 0.5s forwards; /* Slide in effect */
   }
-  
+  .contact-form input{
+    background-color: rgb(255, 255, 255);
+  }
   @keyframes slideIn {
     from {
       transform: translateY(-20px);

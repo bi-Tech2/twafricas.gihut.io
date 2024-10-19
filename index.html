@@ -217,7 +217,45 @@
 
 
 
+<style>
+  .sponsored-by {
+  text-align: center;
+  width: 100%;
+  padding: 40px 20px;
+}
 
+.sponsored-by .section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sponsored-by {
+  display: flex;
+  justify-content: space-around; /* Space between logos */
+  align-items: center;
+  flex-wrap: wrap; /* Makes it responsive */
+  gap: 20px; /* Space between images */
+}
+
+.sponsor-logo {
+  flex: 1 1 150px; /* Each logo takes up space and is responsive */
+  max-width: 150px; /* Maximum size */
+}
+
+.sponsor-logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Ensures the image fits nicely */
+  filter: grayscale(100%); /* Optional: adds a grayscale effect to images */
+  transition: filter 0.3s ease;
+}
+
+.sponsor-logo img:hover {
+  filter: none; /* Removes grayscale on hover */
+}
+
+</style>
           <!-- 
         - #ABOUT
       -->
