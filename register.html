@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Ionicons CDN -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <!-- 
+  - favicon
+-->
+  <link rel="shortcut icon" href="logo.JPG" type="image/svg+xml" />
+
+  <!-- 
+  - custom css link
+-->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- 
+  - google font link
+-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- 
+  - preload images
+-->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+</head>
+  <body>
+
+
+    <main>
+      <article>
+        
+        <section id="register-sec" class="contact-section">
+          <div class="contact-intro">
+            <h2 class="contact-title">Register</h2>
+            <p class="contact-description">
+              Fill out the form below and we'll add you as soon as possible.
+            </p>
+          </div>
+    
+          <form class="contact-form" id="form-datas">
+            <div class="form-group-container">
+              <!-- First Name -->
+              <div class="form-group">
+                <label for="firstName" class="form-label">First Name</label>
+                <input
+                  id="firstName" 
+                  name="firstName"
+                  class="form-input"
+                  placeholder="Your first name"
+                  type="text"
+                  required
+                />
+              </div>
+    
+              <!-- Last Name -->
+              <div class="form-group">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input
+                  id="lastName"
+                  name="lastName"
+                  class="form-input"
+                  placeholder="Your last name"
+                  type="text"
+                  required
+                />
+              </div>
+    
+              <!-- Email Address -->
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Your email address"
+                  type="email"
+                  required
+                />
+              </div>
+    
+              <!-- Phone Numbers -->
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Numbers</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  class="form-input"
+                  placeholder="+2349133949585"
+                  type="text"
+                  required
+                />
+              </div>
+    
+              <!-- Gender -->
+              <div class="form-group">
+                <label for="gender" class="form-label">Gender</label>
+                <select id="gender" name="gender" class="form-input" required>
+                  <option value="" disabled selected>Select your gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+    
+              <!-- Age Range -->
+              <div class="form-group">
+                <label for="ageRange" class="form-label">Age Range</label>
+                <select id="ageRange" name="ageRange" class="form-input" required>
+                  <option value="" disabled selected>Select your age range</option>
+                  <option value="18-25">18-25</option>
+                  <option value="26-35">26-35</option>
+                  <option value="36-45">36-45</option>
+                  <option value="46-60">46-60</option>
+                  <option value="60+">60+</option>
+                </select>
+              </div>
+    
+              <!-- State of Origin -->
+              <div class="form-group">
+                <label for="stateOfOrigin" class="form-label"
+                  >State of Origin</label
+                >
+                <input
+                  id="stateOfOrigin"
+                  name="stateOfOrigin"
+                  class="form-input"
+                  placeholder="Your state of origin"
+                  type="text"
+                  required
+                />
+              </div>
+    
+              <!-- Highest Education Qualification -->
+              <div class="form-group">
+                <label for="education" class="form-label">
+                  Highest Education Qualification
+                </label>
+                <input
+                  id="education"
+                  name="education"
+                  class="form-input"
+                  placeholder="Your highest qualification"
+                  type="text"
+                  required
+                />
+              </div>
+    
+              <!-- Employment Status -->
+              <div class="form-group">
+                <label for="employmentStatus" class="form-label"
+                  >Employment Status</label
+                >
+                <input
+                  id="employmentStatus"
+                  name="employmentStatus"
+                  class="form-input"
+                  placeholder="Your employment status"
+                  type="text"
+                  required
+                />
+              </div>
+    
+              <!-- Organization -->
+              <div class="form-group">
+                <label for="organization" class="form-label">Organization</label>
+                <input
+                  id="organization"
+                  name="organization"
+                  class="form-input"
+                  placeholder="Your organization"
+                  type="text"
+                  required
+                />
+              </div>
+    
+              <!-- Job Title -->
+              <div class="form-group">
+                <label for="jobtitle" class="form-label">Job Title</label>
+                <input
+                  id="jobtitle"
+                  name="jobtitle"
+                  class="form-input"
+                  placeholder="Your job title"
+                  type="text"
+                  required
+                />
+              </div>
+    
+              <!-- Twitter Handle -->
+              <div class="form-group">
+                <label for="twitterhandle" class="form-label">Twitter Handle</label>
+                <input
+                  id="twitterhandle"
+                  name="twitterhandle"
+                  class="form-input"
+                  placeholder="Your Twitter handle"
+                  type="text"
+                  required
+                />
+              </div>
+    
+              <!-- LinkedIn Handle -->
+              <div class="form-group">
+                <label for="linkedinhandle" class="form-label"
+                  >LinkedIn Handle</label
+                >
+                <input
+                  id="linkedinhandle"
+                  name="linkedinhandle"
+                  class="form-input"
+                  placeholder="Your LinkedIn handle"
+                  type="text"
+                  required
+                />
+              </div>
+    
+              <!-- Facebook Handle -->
+              <div class="form-group">
+                <label for="facebookhandle" class="form-label"
+                  >Facebook Handle</label
+                >
+                <input
+                  id="facebookhandle"
+                  name="facebookhandle"
+                  class="form-input"
+                  placeholder="Your Facebook handle"
+                  type="text"
+                  required
+                />
+              </div>
+    
+              <!-- Business Enterprise -->
+              <div class="form-group">
+                <label for="businessenterprise" class="form-label">
+                  Business Enterprise
+                </label>
+                <input
+                  id="businessenterprise"
+                  name="businessenterprise"
+                  class="form-input"
+                  placeholder="Your business enterprise"
+                  type="text"
+                  required
+                />
+              </div>
+    
+              <!-- Country -->
+              <div class="form-group">
+                <label for="country" class="form-label">Country</label>
+                <select id="country" name="country" class="form-input" required>
+                  <option value="" disabled selected>Select your country</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="US">United States</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Israel">Israel</option>
+                  <option value="Canada">Canada</option>
+                </select>
+              </div>
+    
+              <!-- Current Location (State) -->
+              <div class="form-group">
+                <label for="state" class="form-label">State</label>
+                <select id="state" name="state" class="form-input" required>
+                  <option value="" disabled selected>Select your state</option>
+                  <option value="Lagos">Lagos</option>
+                  <option value="Abuja">Abuja</option>
+                  <option value="California">California</option>
+                  <option value="Ontario">Ontario</option>
+                  <option value="Accra">Accra</option>
+                </select>
+              </div>
+    
+              <!-- Personal Expectation -->
+              <div class="form-group">
+                <label for="personalExpectation" class="form-label">
+                  Personal Expectation
+                </label>
+                <textarea
+                  id="personalExpectation"
+                  name="personalExpectation"
+                  class="form-input"
+                  placeholder="Share your expectations here"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+            </div>
+    
+            <!-- Submit Button -->
+            <div class="form-group">
+              <button id="btnSubmit" class="form-submit">Submit</button>
+            </div>
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+  - #FOOTER
+-->
+<footer class="footer">
+  <div class="footer-top section">
+    <div class="container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"
+            ><b>the NA Summit</b>
+            <img src="prev-removebg-preview.png" alt="logo" />
+          </a>
+
+        <p class="footer-text">
+          Welcome to Giolla Agency, where we craft digital solutions. From
+          strategy to execution, we're here to elevate your brand.
+        </p>
+
+        <form id="email-newsletter" class="newsletter-form">
+          <input
+            id="newsletter-email"
+            type="email"
+            name="email_address"
+            placeholder="Enter your email"
+            required
+            class="email-field"
+          />
+
+          <button type="submit" class="form-btn">
+            <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+          </button>
+        </form>
+      </div>
+
+      <ul class="footer-list">
+        <li>
+          <p class="footer-list-title">Our Services</p>
+        </li>
+
+        <li>
+          <a href="stratagy.html" class="footer-link"
+            >Strategy & Research</a
+          >
+        </li>
+
+        <li>
+          <a href="webdev.html" class="footer-link">Web Development</a>
+        </li>
+
+        <li>
+          <a href="digital.html" class="footer-link">Digital Marketing</a>
+        </li>
+
+        <li>
+          <a href="app.html" class="footer-link"
+            >App Design & Development</a
+          >
+        </li>
+
+        <li>
+          <a href="ecommerce.html" class="footer-link"
+            >E-commerce Solutions</a
+          >
+        </li>
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <p class="footer-list-title">Company</p>
+        </li>
+
+        <li>
+          <a href="about.html" class="footer-link">About Us</a>
+        </li>
+
+        <li>
+          <a href="service.html" class="footer-link">Our Services</a>
+        </li>
+
+        <li>
+          <a href="portfolio.html" class="footer-link">Portfolio</a>
+        </li>
+
+        <li>
+          <a href="blog.html" class="footer-link">News & Updates</a>
+        </li>
+
+        <li>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </li>
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <p class="footer-list-title">Contact Us</p>
+        </li>
+
+        <li class="footer-item">
+          <ion-icon name="location" aria-hidden="true"></ion-icon>
+
+          <address class="contact-link address">
+            Gwarinpa, Abuja, Nigeria.
+          </address>
+        </li>
+
+        <li class="footer-item">
+          <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+          <a href="tel:+2349133949585" class="contact-link"
+            >+2349133949585</a
+          >
+        </li>
+
+        <li class="footer-item">
+          <ion-icon name="mail" aria-hidden="true"></ion-icon>
+
+          <a
+            href="mailto:giolla.world.wide@gmail.com"
+            class="contact-link"
+            >giolla.world.wide@gmail.com</a
+          >
+        </li>
+
+        <li class="footer-item">
+          <ul class="social-list">
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=100084568732450&mibextid=JRoKGi"
+                class="social-link"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.instagram.com/giolla_agency/profilecard/?igsh=Z21pdXRpNDVndXB4"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.linkedin.com/in/giolla-agency-giolla-a26a4a330"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p class="copyright">
+        &copy; 2024 GIOLLA_AGENCY | All Rights Reserved by
+        <a href="tel:+2349130993464" class="copyright-link">BiTech</a>
+      </p>
+
+      <ul class="footer-bottom-list">
+        <li>
+          <a href="privacy.html" class="footer-bottom-link"
+            >Privacy Policy</a
+          >
+        </li>
+
+        <li>
+          <a href="terms.html" class="footer-bottom-link">Terms of Use</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/register.js"></script>
+  </body>
+</html>

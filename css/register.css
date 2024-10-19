@@ -1,0 +1,112 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #042b12;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h2 {
+  color: rgb(143, 141, 141);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+select {
+  color: rgb(143, 141, 141);
+}
+
+p {
+  color: rgb(143, 141, 141);
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-section {
+  width: 100%;
+  max-width: 650px;
+  background: #07070773;
+  padding: 40px;
+  border-radius: 45px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.contact-intro {
+  margin-bottom: 30px;
+}
+
+.contact-intro .contact-title {
+  color: whitesmoke;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-size: 1rem;
+  color: rgb(212, 212, 212);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.form-input {
+  padding: 13px;
+  border: 2px solid #33323281;
+  border-radius: 17px;
+  font-size: 1rem;
+  background-color: #042b12;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #33323281;
+  outline: none;
+  box-shadow: 0 0 6px #333232ad;
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-submit {
+  background-color: #007bff;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.form-submit:hover {
+  background-color: #0056b3;
+}
+
+.form-submit:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 20px;
+  }
+}
