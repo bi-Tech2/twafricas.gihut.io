@@ -1218,7 +1218,109 @@
   }
   
   
-  
+  /* General styles for the section */
+.section.classes {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3rem; /* Increased font size */
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* Full width class card */
+.class-card {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* Full width class content */
+.class-content {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Make the card full width */
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.class-title {
+  font-size: 2.5rem; /* Increased font size */
+  color: #28a745; /* Changed to green */
+  margin-bottom: 20px;
+}
+
+.class-description,
+.class-details {
+  color: #555;
+  font-size: 1.2rem; /* Increased font size */
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.btn-primary {
+  padding: 12px 30px;
+  background-color: #28a745; /* Changed button color to green */
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem; /* Increased font size */
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .class-content {
+    padding: 10px;
+  }
+
+  .class-title {
+    font-size: 2rem;
+  }
+
+  .class-description,
+  .class-details {
+    font-size: 1.1rem;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .class-title {
+    font-size: 1.8rem;
+  }
+
+  .class-description,
+  .class-details {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    font-size: 0.95rem;
+    padding: 5px 10px;
+  }
+}
+
   
   :root {
     /* Define color variables */
