@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TNAS2025 - Building a brighter future</title>
+
+    <head>
+      <!-- Ionicons CDN -->
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+    </head>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="logo.JPG" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="hero-1-removebg-preview.png" />
+  </head>
+
+  <body>
+      <!-- 
+    - #HEADER
+    -->
+
+      <header class="header" data-header>
+        <div class="container">
+          <a href="index.html" class="logo"
+            ><sup>the</sup> <b>Network Africa Summit</b><small>2025</small>
+            <img src="prev-removebg-preview.png" alt="logo" />
+          </a>
+
+          <nav class="navbar" data-navbar>
+            <div class="wrapper">
+              <a href="index.html" class="logo"
+                ><sup> </sup> <b>TNAS</b><small>2025</small>
+                <img src="prev-removebg-preview.png" alt="logo" />
+              </a>
+
+              <button
+                class="nav-close-btn"
+                aria-label="Close menu"
+                data-nav-toggler
+              >
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="navbar-list">
+              <li>
+                <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+              </li>
+              <li>
+                <a href="about.html" class="navbar-link" data-nav-link>About</a>
+              </li>
+              <li>
+                <a href="class.html" class="navbar-link" data-nav-link
+                  >Classes</a
+                >
+              </li>
+                <a href="contact.html" class="navbar-link" data-nav-link
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="register.html" class="navbar-link dn" data-nav-link
+                  >Register</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <a href="register.html" class="btn-outline">Register</a>
+
+          <div class="overlay" data-nav-toggler data-overlay></div>
+        </div>
+      </header>
+<br><br><br>
+      <main>
+        <article>
+          
+
+          <section class="contact-section">
+            <div class="contact-intro">
+              <h2 class="contact-title">Get in Touch</h2>
+              <p class="contact-description">
+                Fill out the form below and we'll get back to you as soon as
+                possible.
+              </p>
+            </div>
+
+            <form class="contact-form" id="form-datas">
+              <input
+                type="hidden"
+                name="access_key"
+                value="YOUR_ACCESS_KEY_HERE"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New Contact Form Submission from Web3Forms"
+              />
+              <input type="hidden" name="from_name" value="My Website" />
+              <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+
+              <div class="form-group-container">
+                <div class="form-group">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    id="name-input"
+                    name="name"
+                    class="form-input"
+                    placeholder="Your name"
+                    type="text"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="Your email"
+                    type="email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    class="form-input"
+                    placeholder="+2349133949585"
+                    type="text"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-textarea"
+                    id="message"
+                    name="message"
+                    placeholder="Your message"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <div
+                class="w"
+                style="width: 100%; display: flex; justify-content: center"
+              >
+                <button id="btnSubmit" class="form-submit">Send Message</button>
+              </div>
+            </form>
+          </section>
+
+        </article>
+      </main>
+
+      <!-- 
+    - #FOOTER
+-->
+
+      <footer class="footer">
+        <div class="footer-top section">
+          <div class="container">
+            <div class="footer-brand" style="margin-top: -5px;">
+              <a href="index.html" class="logo"><b>the NA Summit</b>
+                <img src="prev-removebg-preview.png" alt="logo" />
+              </a>
+
+              <p class="footer-text">
+                Welcome to the Network Africa Summit 2025, where we connect leaders and innovators across the continent.
+              </p>
+              
+
+              <form id="email-newsletter" class="newsletter-form">
+                <input
+                  id="newsletter-email"
+                  type="email"
+                  name="email_address"
+                  placeholder="Enter your email"
+                  required
+                  class="email-field"
+                />
+
+                <button type="submit" class="form-btn">
+                  <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+                </button>
+              </form>
+            </div>
+
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Services</p>
+              </li>
+
+              <li>
+                <a href="register.html" class="footer-link">Register</a>
+              </li>
+
+              <li>
+                <a href="about.html" class="footer-link">More info</a>
+              </li>
+
+              <li>
+                <a class="footer-link"
+                  >Privacy policy</a
+                >
+              </li>
+            </ul>
+
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Links</p>
+              </li>
+
+              <li>
+                <a href="about.html" class="footer-link">About Us</a>
+              </li>
+
+              <li>
+                <a href="class.html" class="footer-link">Classes</a>
+              </li>
+
+              <li>
+                <a href="contact.html" class="footer-link">Contact</a>
+              </li>
+            </ul>
+
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Contact Us</p>
+              </li>
+
+              <li class="footer-item">
+                <ion-icon name="location" aria-hidden="true"></ion-icon>
+
+                <address class="contact-link address">
+                  12th Avenue, Ali Akilu State House, Abuja
+                </address>
+              </li>
+
+              <li class="footer-item">
+                <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+                <a href="tel:+2348107304196" class="contact-link"
+                  >+2348107304196</a
+                >
+              </li>
+
+              <li class="footer-item">
+                <ion-icon name="mail" aria-hidden="true"></ion-icon>
+
+                <a
+                  href="mailto:info.tnas2025@gmail.com"
+                  class="contact-link"
+                  >info.tnas2025@gmail.com</a
+                >
+              </li>
+
+              <li class="footer-item">
+                <ul class="social-list">
+                  <li>
+                    <a
+                      href="https://www.instagram.com/the_network_africa_summit_2025/"
+                      class="social-link"
+                    >
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="social-link">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.instagram.com/the_network_africa_summit_2025/"
+                      class="social-link"
+                    >
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.instagram.com/the_network_africa_summit_2025/"
+                      class="social-link"
+                    >
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+            <p class="copyright">
+              &copy; 2025 TNAS | All Rights Reserved by
+              <a href="tel:+2349130993464" class="copyright-link">BiTech</a>
+            </p>
+
+          </div>
+        </div>
+      </footer>
+      <!-- 
+    - custom js link
+  -->
+      <script src="js/script.js"></script>
+
+      <!-- 
+    - ionicon link
+  -->
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+  </body>
+</html>
