@@ -1264,7 +1264,7 @@
 .class-description,
 .class-details {
   color: #555;
-  font-size: 1.2rem; /* Increased font size */
+  font-size: 1.7rem; /* Increased font size */
   margin-bottom: 20px;
 }
 
@@ -1287,7 +1287,7 @@
 /* Responsive styling */
 @media screen and (max-width: 768px) {
   .class-content {
-    padding: 10px;
+    padding: 20px 10px;
   }
 
   .class-title {
@@ -1296,7 +1296,7 @@
 
   .class-description,
   .class-details {
-    font-size: 1.1rem;
+    font-size: 1.7rem;
   }
 
   .btn-primary {
@@ -1312,12 +1312,12 @@
 
   .class-description,
   .class-details {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .btn-primary {
     font-size: 0.95rem;
-    padding: 5px 10px;
+    padding: 4px 8px;
   }
 }
 
