@@ -1353,7 +1353,7 @@
 }
 
 .contact-description {
-    font-size: 1.2rem; /* Larger description size */
+    font-size: 1.8rem; /* Larger description size */
     max-width: 600px; /* Limit width of description */
     margin: 0 auto; /* Center align */
     color: var(--cta-text-color); /* Set description color */
@@ -1423,7 +1423,7 @@
     padding: 12px 20px; /* Padding around button */
     border-radius: 4px; /* Rounded corners */
     font-size: 1.6rem; 
-    min-width: 35rem;
+    width: 100%;
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s, transform 0.3s; /* Smooth background color change */
 }

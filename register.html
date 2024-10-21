@@ -16,6 +16,7 @@
   - favicon
 -->
   <link rel="shortcut icon" href="logo.JPG" type="image/svg+xml" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- 
   - custom css link
@@ -50,8 +51,10 @@
               Fill out the form below and we'll add you as soon as possible.
             </p>
           </div>
-    
-          <form class="contact-form" id="form-datas">
+    <style>
+      
+    </style>
+          <form class="contact-form" id="form-datas" style="height: 100%;">
             <div class="form-group-container">
               <!-- First Name -->
               <div class="form-group">
@@ -261,15 +264,16 @@
               <!-- Country -->
               <div class="form-group">
                 <label for="country" class="form-label">Country</label>
-                <select id="country" name="country" class="form-input" required>
-                  <option value="" disabled selected>Select your country</option>
-                  <option value="Nigeria">Nigeria</option>
-                  <option value="US">United States</option>
-                  <option value="Ghana">Ghana</option>
-                  <option value="Israel">Israel</option>
-                  <option value="Canada">Canada</option>
-                </select>
+                <input
+                  id="country"
+                  name="country"
+                  class="form-input"
+                  placeholder="Enter your country"
+                  type="text"
+                  required
+                />
               </div>
+              
     
               <!-- Current Location (State) -->
               <div class="form-group">
@@ -415,7 +419,7 @@
                 <ul class="social-list">
                   <li>
                     <a
-                      href="https://www.instagram.com/the_network_africa_summit_2025/"
+                      href="https://www.facebook.com/profile.php?id=61567183628165&mibextid=LQQJ4d"
                       class="social-link"
                     >
                       <ion-icon name="logo-facebook"></ion-icon>
@@ -423,7 +427,7 @@
                   </li>
 
                   <li>
-                    <a class="social-link">
+                    <a href="https://x.com/tnas2025?s=21" class="social-link">
                       <ion-icon name="logo-twitter"></ion-icon>
                     </a>
                   </li>
